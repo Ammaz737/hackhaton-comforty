@@ -11,6 +11,7 @@
     "import-data": "node script/migrate.mjs"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.10.2",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.1",
@@ -23,7 +24,8 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "sanity": "^3.70.0",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.14",
+    "sweetalert2": "^11.15.10"
   },
   "devDependencies": {
     "@types/node": "^20",

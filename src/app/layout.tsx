@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header, { Header1, Header2 } from "@/components/header"; // Import your header components
-import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton, SignOutButton } from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
