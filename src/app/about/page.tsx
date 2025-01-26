@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import React from "react";
+import Image from "next/image"; 
 
 const AboutPage: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const AboutPage: React.FC = () => {
 
           
           <div className="md:w-1/2">
-            <img
+            <Image
               src="/Image/whair.png"
               alt="Comforty Chair"
               className="rounded-lg shadow-lg"
@@ -82,25 +83,25 @@ const AboutPage: React.FC = () => {
               {
                 name: "The Parker sofa",
                 price: "$500.00",
-                img: "/image/Fe.png",
+                Image: "/image/Fe.png",
               },
               {
                 name: "The Darcy chair",
                 price: "$250.00",
-                img: "/Image/chair.png",
+                Image: "/Image/chair.png",
               },
               {
                 name: "The Cindy chair",
                 price: "$200.00",
-                img: "/image/Chair2.png",
+                Image: "/image/Chair2.png",
               },
             ].map((product, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-lg p-6 text-center"
               >
-                <img
-                  src={product.img}
+                <Image
+                  src={product.Image}
                   alt={product.name}
                   className="w-full h-48 object-cover rounded mb-4"
                 />

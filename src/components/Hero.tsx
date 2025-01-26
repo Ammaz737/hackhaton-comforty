@@ -129,7 +129,7 @@ export const Hero3: React.FC = () => {
         {categories.map((category) => (
           <div key={category.id} className="relative rounded-lg shadow-lg overflow-hidden">
             <div className="aspect-w-4 aspect-h-3">
-              <img src={category.imageUrl} alt={category.title} className="w-full h-full object-cover" />
+              <Image src={category.imageUrl} alt={category.title} className="w-full h-full object-cover" />
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white">
               <h3 className="text-lg font-semibold">{category.title}</h3>
@@ -147,7 +147,7 @@ export const Hero4: React.FC = () => {
     <section className="py-8 px-4 md:px-10">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         <div className="relative col-span-1 md:col-span-2">
-          <img src="/Image/Fet.png" alt="Orange Chair" className="w-full h-[300px] md:h-[500px] object-cover rounded-lg" />
+          <Image src="/Image/Fet.png" alt="Orange Chair" className="w-full h-[300px] md:h-[500px] object-cover rounded-lg" />
           <div className="absolute left-[-200px] top-1/2 -translate-y-1/2 -rotate-90 text-lg font-semibold tracking-widest text-gray-800 whitespace-nowrap">
             EXPLORE NEW AND POPULAR STYLES
           </div>
@@ -155,16 +155,20 @@ export const Hero4: React.FC = () => {
 
         <div className="col-span-1 md:col-span-3 grid grid-cols-2 gap-4">
           <div className="flex items-center justify-center">
-            <img src="/Image/Feth.png" alt="Chair 1" className="w-full h-[240px] object-cover rounded-lg" />
+            <Image src="/Image/Feth.png" 
+            alt="Chair 1"
+            width={500}
+            height={500}
+           className="w-full h-[240px] object-cover rounded-lg" />
           </div>
           <div className="flex items-center justify-center">
-            <img src="/Image/img.png" alt="Chair 2" className="w-full h-[240px] object-cover rounded-lg" />
+            <Image src="/Image/Image.png" alt="Chair 2" className="w-full h-[240px] object-cover rounded-lg" />
           </div>
           <div className="flex items-center justify-center">
-            <img src="/Image/Feath.png" alt="Chair 3" className="w-full h-[240px] object-cover rounded-lg" />
+            <Image src="/Image/Feath.png" alt="Chair 3" className="w-full h-[240px] object-cover rounded-lg" />
           </div>
           <div className="flex items-center justify-center">
-            <img src="/Image/Feath.png" alt="Chair 4" className="w-full h-[240px] object-cover rounded-lg" />
+            <Image src="/Image/Feath.png" alt="Chair 4" className="w-full h-[240px] object-cover rounded-lg" />
           </div>
         </div>
       </div>

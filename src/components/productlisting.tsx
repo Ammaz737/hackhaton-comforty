@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import Swal from "sweetalert2";
@@ -24,8 +23,8 @@ interface Product {
 
 const ProductCards: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const [cart, setCart] = useState<Product[]>([]); // Cart state for handling items
-  const router = useRouter();
+//   const [cart, setCart] = useState<Product[]>([]); // Cart state for handling items
+//   const router = useRouter();
 
   // Fetch products from the external API
   const fetchProducts = async () => {
@@ -121,3 +120,7 @@ const ProductCards: React.FC = () => {
 };
 
 export default ProductCards;
+const setCart = (cartItems: Product[]) => {
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+};
+

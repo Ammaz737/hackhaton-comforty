@@ -41,7 +41,7 @@
 // // };
 
 // export default ProductsPage;
-import Link from "next/link";
+
 import ProductCards from "@/components/productlisting";
 
 const ProductsPage: React.FC = () => {

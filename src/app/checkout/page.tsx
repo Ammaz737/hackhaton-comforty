@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { getCartItems } from "../actions/actions"; // Your cart items fetching function
 import Swal from "sweetalert2"; // SweetAlert
 import Image from "next/image";
-import Link from "next/link";
 
 interface Product {
   _id: string;
